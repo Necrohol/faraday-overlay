@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  gentoo:
+    image: gentoo/stage3-amd64
+    container_name: gentoo_pkgdev
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./$CWD
+    ### pay it will just run on this repo.... 
+    command: /bin/bash && emerge-webrsync &&  emerge dev-util/pkgdev && pkgdev manifest && pkgdev commit
