@@ -2,7 +2,7 @@ EAPI=8
 
 DESCRIPTION="Faraday CLI for automating security workflows"
 HOMEPAGE="https://github.com/infobyte/faraday-cli"
-SRC_URI="https://github.com/infobyte/faraday-cli/archive/refs/tags/v1.0.0.tar.gz"
+SRC_URI="https://github.com/infobyte/faraday-cli/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
